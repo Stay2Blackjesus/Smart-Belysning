@@ -4,35 +4,36 @@
 <head>
     <title>Prototyp lämp</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
-    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css" <script src="Script.js">
-    </script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
-    <nav class="nav flex-column">
-        <a class="navbar-brand" href="#">Smart-lamps HBG</a>
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">Inställningar</a>
-        <a class="nav-link disabled" href="#">Hjälp</a>
-    </nav>
-    <br>
+    <script src="Script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <div class="w3-sidebar w3-bar-block w3-border-right w3-dark-grey w3-border-bottom" style="display:none" id="sidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3large w3-dark-grey w3-border-bottom">Stäng &times;</button>
+        <a href="#" class="w3-bar-item w3-button w3-dark-grey w3-border-bottom">Hem</a>
+        <a href="#" class="w3-bar-item w3-button w3-dark-grey w3-border-bottom">Inställningar</a>
+        <a href="#" class="w3-bar-item w3-button w3-dark-grey w3-border-bottom">Hjälp</a>
+    </div>
 
+    <div class="w3-dark-grey">
+        <button class="w3-button w3-dark-grey w3-xlarge" onclick="w3_open()">☰</button>
+        <div class="w3-container">
+            <h1>Smart-lamps HBG</h1>
+        </div>
+    </div>
+
+        <!---The map from Google Maps-->
     <iframe class="center" src="https://www.google.com/maps/d/u/0/embed?mid=14mbbzZ7y1otaAWkSmb5GIyr9MJY6LWER"
         width=100% height=680px></iframe>
 
 
-    <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-        <p>Value: <span id="demo"></span></p>
+
+        <!-- This creates a button which when pressed Calls the Btn1 function in Script.js -->
+        <button onclick="Btn1()">Dark mode</button>
+
     </div>
-
-
-    <!-- This creates a button which when pressed starts the Btn1 script on Script.js -->
-    <button onclick="Btn1()">Dark mode</button>
-
 </body>
-
 </html>

@@ -1,16 +1,20 @@
+
+/*---This file only Consists of css for Index.html-----*/
+
 body {
-  
-  background-color: rgb(94, 94, 94);
+  padding: 0.3%;
+  background-color: rgb(255, 255, 255);
   color: black;
   font-size: 25px;
 }
 
+/* This Replaces body if called*/
 .dark-mode {
   background-color: rgb(59, 59, 59);
   color: white;
 }
 
-
+/* Design for button*/
 .button {
     border: none;
     color: white;
@@ -19,6 +23,11 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 8px 2px;
     cursor: pointer;
   }
+
+  /* This will make the header appear on the same level as the dropdown button */
+.w3-container{
+  display: inline-block;
+}

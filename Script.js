@@ -1,15 +1,14 @@
-
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
+//Knappen för sidebar
+function w3_open() {
+  document.getElementById("sidebar").style.display = "block";
 }
 
-//Ändrar Bakgrundsfärg till Dark-Mode värdet från Style.css
+function w3_close() {
+  document.getElementById("sidebar").style.display = "none";
+}
+
+//If called upon, replaces Body with Dark-mode in the Style.css file
 function Btn1() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 }
-
